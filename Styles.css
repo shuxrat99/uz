@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.photo-box {
+    width: 100%;
+    max-width: 750px;
+    height: 1037px;
+    margin: 20px auto;
+    background: #e0e0e0;
+    border: 2px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-box p {
+    color: #666;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 750px) {
+    .photo-box {
+        height: auto;
+        min-height: 300px; /* Минимальная высота на телефонах */
+    }
+}
